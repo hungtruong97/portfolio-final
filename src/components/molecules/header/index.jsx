@@ -1,10 +1,10 @@
 import Heading from "../../atoms/heading";
-import "../header/styles.module.scss";
+import styles from "../header/styles.module.scss";
 // import PropTypes from "prop-types";
 
 const Header = () => {
   return (
-    <div className="Header">
+    <div className={styles.header}>
       <Heading level={3}>Home</Heading>
       <Heading level={3}>About me</Heading>
       <Heading level={3}>Skills & Abilities</Heading>
