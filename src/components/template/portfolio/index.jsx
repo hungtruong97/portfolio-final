@@ -1,11 +1,11 @@
 import Career from "../../organisms/Career";
-import Header from "../../organisms/Header";
+import HeaderSec from "../../organisms/HeaderSec";
 import Hero from "../../organisms/Hero";
 
 const Portfolio = () => {
   return (
     <>
-      <Header></Header>
+      <HeaderSec></HeaderSec>
       <Hero></Hero>
       <Career></Career>
     </>
