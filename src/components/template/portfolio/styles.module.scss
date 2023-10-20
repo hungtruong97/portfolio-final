@@ -1,0 +1,29 @@
+.container {
+  max-width: 100%;
+  padding: 60px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  .content {
+    width: 800px;
+    background-color: var(--secondary-color);
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      .header_button {
+        color: var(--text-color);
+        font-weight: 500;
+      }
+
+      :hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
