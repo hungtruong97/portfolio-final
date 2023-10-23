@@ -6,10 +6,6 @@
   --secondary-color: #efce49;
   --tertiary-color: #4d5d57;
   --text-color: #45474b;
-
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 }
 
 *,
@@ -20,6 +16,22 @@
 
 * {
   margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400, 500, 600, 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text-color);
 }
 
 a {

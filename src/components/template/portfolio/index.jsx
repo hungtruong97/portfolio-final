@@ -40,8 +40,22 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section className="hero">
-        <div></div>
+      <section id={styles["hero"]}>
+        <div className={styles["container"]}>
+          <div className={styles["rectangle"]}></div>
+          <div className={styles["content"]}>
+            <div className={styles["text"]}>
+              <h1>Hi, I&apos;m Michael</h1>
+              <h6>I&apos;m a jack of all trade</h6>
+            </div>
+            <div className={styles["photo"]}>
+              <img
+                src="/public/img/happy-bearded-man-busines-clothes-with-crossed-arms-looking-camera-gray_171337-11335.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <section className="about"></section>
       <section className="skills"></section>
