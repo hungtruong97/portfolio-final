@@ -39,8 +39,32 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <div
+          className={`${styles.menu_overlay} ${menuOpen ? styles.open : ""}`}
+        >
+          <div className={styles["menu"]}>
+            <a href="#">
+              <span className={styles["header_button"]}>Home</span>
+            </a>
+            <a href="#">
+              <span className={styles["header_button"]}>About me</span>
+            </a>
+            <a href="#">
+              <span className={styles["header_button"]}>
+                Skills & Abilities
+              </span>
+            </a>
+            <a href="#">
+              <span className={styles["header_button"]}>Career Highlights</span>
+            </a>
+            <a href="#">
+              <span className={styles["header_button"]}>Contact Me</span>
+            </a>
+          </div>
+        </div>
       </section>
-      <section id={styles["hero"]}>
+
+      {/* <section id={styles["hero"]}>
         <div className={styles["container"]}>
           <div className={styles["rectangle"]}></div>
           <div className={styles["content"]}>
@@ -56,7 +80,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="about"></section>
       <section className="skills"></section>
       <section className="career"></section>
