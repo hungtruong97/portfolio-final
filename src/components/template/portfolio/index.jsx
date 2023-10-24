@@ -61,16 +61,19 @@ const Portfolio = () => {
               <span className={styles["header_button"]}>Contact Me</span>
             </a>
           </div>
+          <div className={styles["button"]} onClick={toggleMenu}>
+            x
+          </div>
         </div>
       </section>
 
-      {/* <section id={styles["hero"]}>
+      <section id={styles["hero"]}>
         <div className={styles["container"]}>
           <div className={styles["rectangle"]}></div>
           <div className={styles["content"]}>
             <div className={styles["text"]}>
               <h1>Hi, I&apos;m Michael</h1>
-              <h6>I&apos;m a jack of all trade</h6>
+              <h2>I&apos;m a jack of all trade</h2>
             </div>
             <div className={styles["photo"]}>
               <img
@@ -80,7 +83,8 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+
       <section className="about"></section>
       <section className="skills"></section>
       <section className="career"></section>
