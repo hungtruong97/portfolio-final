@@ -7,6 +7,7 @@
   z-index: 2;
 
   .container {
+    width: 100%;
     padding: 60px 90px;
     display: flex;
     align-items: center;
@@ -77,14 +78,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0px;
+      padding: 20px;
 
       .content {
         width: 100%;
         background-color: var(--secondary-color);
         display: flex;
         justify-content: flex-end;
-        padding: 20px 40px;
+        padding: 20px;
 
         .hamburger {
           display: block;
@@ -145,10 +146,10 @@
   @media (max-width: 992px) {
     .container {
       height: 700px;
-      padding: 0px;
+      padding: 20px;
 
       .rectangle {
-        height: 300px;
+        height: 200px;
       }
 
       .content {
@@ -169,25 +170,77 @@
   }
 }
 
-// @media (max-width: 768px) {
-//   #header {
-//     .container {
-//       padding: 0px;
+// About section
+#about {
+  width: 100%;
 
-//       .content {
-//         width: 800px;
-//         background-color: var(--secondary-color);
-//         display: flex;
-//         justify-content: flex-end;
-//         padding: 20px 40px;
+  .container {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 90px;
 
-//         .hamburger {
-//           display: block;
-//         }
-//         .menu {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 100px;
+
+      .photo {
+        width: 40%;
+        max-width: 500px;
+        height: 700px;
+        object-fit: contain;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .text-block {
+          .title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+          }
+
+          .list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      padding: 20px;
+      .content {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .photo {
+          width: 100%;
+          height: 100%;
+        }
+
+        .text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
