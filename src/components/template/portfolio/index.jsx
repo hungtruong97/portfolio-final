@@ -43,6 +43,9 @@ const Portfolio = () => {
           className={`${styles.menu_overlay} ${menuOpen ? styles.open : ""}`}
         >
           <div className={styles["menu"]}>
+            <div className={styles["button"]} onClick={toggleMenu}>
+              x
+            </div>
             <a href="#">
               <span className={styles["header_button"]}>Home</span>
             </a>
@@ -60,9 +63,6 @@ const Portfolio = () => {
             <a href="#">
               <span className={styles["header_button"]}>Contact Me</span>
             </a>
-          </div>
-          <div className={styles["button"]} onClick={toggleMenu}>
-            x
           </div>
         </div>
       </section>
@@ -157,7 +157,63 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section className="skills"></section>
+      <section id={styles["skills"]}>
+        <div className={styles["container"]}>
+          <div className={styles["content"]}>
+            <h2>Skills and Abilities</h2>
+            <div className={styles["cards"]}>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>Linguistic</h3>
+                </div>
+              </div>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>Project Management</h3>
+                </div>
+              </div>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>Business & Marketing</h3>
+                </div>
+              </div>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>UX Design</h3>
+                </div>
+              </div>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>Coding</h3>
+                </div>
+              </div>
+              <div className={styles["card"]}>
+                <div className={styles["photo"]}>
+                  <i className="fa-solid fa-globe"></i>
+                </div>
+                <div className={styles["title"]}>
+                  <h3>Soft skills</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="career"></section>
       <section className="contact"></section>
     </>
