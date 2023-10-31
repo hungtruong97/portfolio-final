@@ -1,5 +1,5 @@
 // Header section
-#header {
+.header {
   width: 100%;
   position: absolute;
   top: 0;
@@ -105,7 +105,7 @@
 }
 
 // Hero section
-#hero {
+.hero {
   .container {
     height: 1000px;
     background-color: var(--primary-color);
@@ -116,7 +116,7 @@
 
     .rectangle {
       width: 100%;
-      height: 300px;
+      height: 400px;
       background-color: var(--tertiary-color);
       position: absolute;
       bottom: 0;
@@ -135,7 +135,7 @@
 
       .photo {
         width: 700px;
-        object-fit: contain;
+        object-fit: cover;
 
         img {
           width: 100%;
@@ -146,7 +146,7 @@
 
   @media (max-width: 992px) {
     .container {
-      height: 700px;
+      height: 500px;
       padding: 20px;
 
       .rectangle {
@@ -164,7 +164,8 @@
         }
 
         .photo {
-          max-width: 100%;
+          width: 100%;
+          max-width: 500px;
         }
       }
     }
@@ -172,10 +173,9 @@
 }
 
 // About section
-#about {
-  width: 100%;
-
+.about {
   .container {
+    width: 100%;
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -192,11 +192,11 @@
       .photo {
         width: 40%;
         max-width: 500px;
-        height: 700px;
-        object-fit: contain;
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
@@ -246,7 +246,8 @@
   }
 }
 
-#skills {
+// skills section
+.skills {
   .container {
     display: flex;
     align-items: center;
@@ -278,12 +279,13 @@
           .photo {
             width: 100%;
             height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
+            margin-bottom: 20px;
 
-          .title {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
         }
       }
@@ -304,10 +306,146 @@
   @media (max-width: 767px) {
     .container {
       .content {
+        text-align: center;
         .cards {
           .card {
             width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+
+// career section
+.career {
+  .container {
+    width: 100%;
+    padding: 60px 90px;
+    .content {
+      h2 {
+        margin-bottom: 50px;
+      }
+      .row {
+        display: flex;
+
+        .timeline {
+          position: relative;
+          margin-right: 100px;
+
+          .line {
+            width: 1px;
+            height: 550px;
+            border: 1px solid var(--text-color);
+            position: absolute;
+            left: 7px;
+            top: 4px;
+            z-index: -1;
+          }
+
+          .activities {
+            .activity {
+              display: flex;
+              gap: 30px;
+            }
+
+            .activity:nth-child(1) {
+              margin-bottom: 30px;
+            }
+
+            .activity:nth-child(2) {
+              margin-bottom: 300px;
+            }
+          }
+        }
+        .textbox {
+          width: 100%;
+          height: 100%;
+          padding: 30px;
+          border: 1px solid var(--text-color);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      padding: 20px;
+      .content {
+        h2 {
+          margin-bottom: 30px;
+        }
+        .row {
+          flex-direction: column;
+          gap: 20px;
+          .timeline {
+            width: 100%;
+            .line {
+              width: 100%;
+              height: 1px;
+              top: 10px;
+              left: 0px;
+            }
+            .activities {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+
+              .activity {
+                width: 200px;
+                flex-direction: column;
+                gap: 10px;
+              }
+              .activity:nth-child(1) {
+                margin-bottom: 10px;
+              }
+
+              .activity:nth-child(2) {
+                margin-bottom: 0px;
+              }
+            }
+          }
+          .textbox {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// contact section
+.contact {
+  .container {
+    width: 100%;
+    padding: 60px 90px;
+    background: var(--tertiary-color);
+
+    .content {
+      h2 {
+        margin-bottom: 50px;
+        color: var(--primary-color);
+      }
+
+      .social {
+        display: flex;
+        gap: 20px;
+
+        i {
+          font-size: 36px;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      padding: 20px;
+      .content {
+        h2 {
+          margin-bottom: 20px;
         }
       }
     }
