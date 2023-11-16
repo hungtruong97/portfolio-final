@@ -8,6 +8,14 @@
   --text-color: #45474b;
 }
 
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #45474b;
+  --secondary-color: #4d5d57;
+  --tertiary-color: #f5f7f8;
+  --text-color: #f5f7f8;
+}
+
 *,
 *::before,
 *::after {
@@ -23,6 +31,7 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400, 500, 600, 700;
+  background: var(--primary-color);
 }
 
 h1,
