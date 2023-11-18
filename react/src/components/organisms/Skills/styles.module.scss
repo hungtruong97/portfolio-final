@@ -1,0 +1,49 @@
+// skills section
+.skills {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 90px;
+    background: var(--secondary-color);
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .container {
+      padding: 20px;
+      .content {
+        h2 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      .content {
+        text-align: center;
+      }
+    }
+  }
+}
