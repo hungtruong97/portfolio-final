@@ -7,7 +7,6 @@ const app = document.querySelector("#app");
 
 const toggleMenu = () => {
   const menuOverlay = document.querySelector(".menu_overlay");
-  console.log("clicked");
   menuOverlay.classList.toggle("open");
 };
 
