@@ -4,18 +4,64 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 </head>
 
 <body>
   <div id="app">
-    <section class="header">
-      <h1>My App</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-      </nav>
+    <section id="header" class="header">
+      <div class="container">
+        <div class="content">
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="menu">
+            <a href="#">
+              <span class="header_button">Home</span>
+            </a>
+            <a href="#about">
+              <span class="header_button">About me</span>
+            </a>
+            <a href="#skills">
+              <span class="header_button">
+                Skills & Abilities
+              </span>
+            </a>
+            <a href="#career">
+              <span class="header_button">Career Highlights</span>
+            </a>
+            <a href="#contact">
+              <span class="header_button">Contact Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu_overlay">
+        <div class="menu">
+          <div class="closeMenuButton">
+            x
+          </div>
+          <a href="#">
+            <span class="header_button">Home</span>
+          </a>
+          <a href="#about">
+            <span class="header_button">About me</span>
+          </a>
+          <a href="#skills">
+            <span class="header_button">Skills & Abilities</span>
+          </a>
+          <a href="#career">
+            <span class="header_button">Career Highlights</span>
+          </a>
+          <a href="#contact">
+            <span class="header_button">Contact Me</span>
+          </a>
+        </div>
+      </div>
     </section>
 
 
